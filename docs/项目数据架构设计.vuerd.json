@@ -1,0 +1,1548 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -221,
+    "scrollLeft": -429,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "id": "1f428d89-55d7-4a1b-bbd8-3e9d710265b5",
+        "name": "user_table",
+        "comment": "用户表",
+        "columns": [
+          {
+            "id": "8932adb6-424d-46a0-8533-fc2737bb6652",
+            "name": "id",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "66e1a3e0-d6f8-4361-bc9b-cebadcc3125f",
+            "name": "user_id",
+            "comment": "用户ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "d30b48ae-1c4f-4865-ba91-8d76da446390",
+            "name": "username",
+            "comment": "用户名称",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.66896057128906,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c569fb4c-dd9f-4ed7-86d6-38f7aacef773",
+            "name": "password",
+            "comment": "用户密码",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "f56ef55b-c0fc-4b34-8a1c-46f367557184",
+            "name": "avatar_url",
+            "comment": "用户肖像",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.0069580078125,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "e0aaa76c-a41c-4391-b21f-376b74f855f9",
+            "name": "email",
+            "comment": "邮箱",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "cf7b785b-1194-46a3-9c77-26fc15d797b8",
+            "name": "mobile",
+            "comment": "手机号码",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "09cab327-f3f4-4471-acee-fc6d69060471",
+            "name": "open_id",
+            "comment": "绑定微信",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "a6b9a825-2045-4518-ae67-b089ffc3f411",
+            "name": "qq",
+            "comment": "绑定QQ",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "9895a0f2-9544-4169-901a-57f3939d836f",
+            "name": "commet",
+            "comment": "用户备注",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "f5ef9b07-ba40-469b-b181-a6bdfab0eb96",
+            "name": "created_at",
+            "comment": "创建时间",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.16795349121094,
+              "widthComment": 60,
+              "widthDataType": 77.49092102050781,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "2492c3aa-94c9-4671-9152-949c414d4986",
+            "name": "updated_at",
+            "comment": "更新时间",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.61296081542969,
+              "widthComment": 60,
+              "widthDataType": 77.49092102050781,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 250,
+          "top": 46,
+          "zIndex": 2,
+          "widthName": 64.074951171875,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "bf0b8dfd-d978-475f-a3de-b1d651e80939",
+        "name": "theme_table",
+        "comment": "",
+        "columns": [
+          {
+            "id": "bace55ef-58f4-4bef-9d53-52c4e2524e92",
+            "name": "id",
+            "comment": "id",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "e465d2f5-05ae-4139-a8de-2bb3cd98c5a2",
+            "name": "color",
+            "comment": "色值",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "f7d7b8ff-c1e3-47d2-9646-1c60878daf97",
+            "name": "description",
+            "comment": "描述",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.02792358398438,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "58012faf-f586-40f8-84fd-5db43697d1c5",
+            "name": "createdAt",
+            "comment": "创建时间",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60.94194030761719,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "61a83ed0-7e2a-4fac-9ff3-edc3bff59804",
+            "name": "updateAt",
+            "comment": "更新时间",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 249.75,
+          "top": 385.5,
+          "zIndex": 1,
+          "widthName": 75.65794372558594,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "b544d6dc-f3a6-4b4d-bb4d-5dcb3b5200be",
+        "name": "account_table",
+        "comment": "记账【账本】",
+        "columns": [
+          {
+            "id": "4f65ed8a-c583-464b-9e37-84bd48f2143a",
+            "name": "account_id",
+            "comment": "账目ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.71495056152344,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "a1537cc5-6f37-498d-8ba2-a345d5b86035",
+            "name": "classification_id",
+            "comment": "分类ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.44688415527344,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "9ad9fd09-52ca-4f90-a87b-b5ff905afd29",
+            "name": "amount",
+            "comment": "金额，默认保留两位小数",
+            "dataType": "DOUBLE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "2a47b1b5-ed00-4ec5-a1d6-3c3aa70eb5e5",
+            "name": "description",
+            "comment": "备注、描述(255)",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.02792358398438,
+              "widthComment": 99.05795288085938,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c1673ca5-33bd-49f1-b8d1-3767289a68c9",
+            "name": "cover_url",
+            "comment": "备注图片",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "f6667ffd-4531-431f-9cbd-1262b1ce3068",
+            "name": "address",
+            "comment": "定位地址，位置信息",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 119,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "2e1792e8-faa8-4a26-b41c-fd47c272b82b",
+            "name": "date",
+            "comment": "记账时间 ",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 77.49092102050781,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "f527ff3a-a96d-4450-ae70-1d5f9d98dc3d",
+            "name": "created_at",
+            "comment": "创建时间",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.16795349121094,
+              "widthComment": 60,
+              "widthDataType": 77.49092102050781,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "7da76d04-a9a3-442b-b217-86a04d91ce67",
+            "name": "updated_at",
+            "comment": "更新时间",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.61296081542969,
+              "widthComment": 60,
+              "widthDataType": 77.49092102050781,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 792.75,
+          "top": 48.3333,
+          "zIndex": 6,
+          "widthName": 86.5389404296875,
+          "widthComment": 80
+        },
+        "visible": true
+      },
+      {
+        "id": "275af5f4-ecd9-4f62-bd8d-b08b90e05e83",
+        "name": "account_classification_table",
+        "comment": "账本分类表",
+        "columns": [
+          {
+            "id": "d34da054-1d0a-4cbb-9a34-5a63af2b77f8",
+            "name": "classification_id",
+            "comment": "分类ID",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.44688415527344,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "878c3ce8-dd9d-4040-9409-23c013ea6c18",
+            "name": "account_type",
+            "comment": "账目类型 [0:支出，1:收入，2:核销]",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 82.66494750976562,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "c00af96d-35d7-4168-adc0-9adf61fb01d4",
+            "name": "classification",
+            "comment": "分类名称",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 81.00090026855469,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "770d4cff-1af3-4498-a636-84067087bfe2",
+            "name": "classification_icon",
+            "comment": "分类图标",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 112.82487487792969,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "3539e6f2-3710-4059-8947-3ec9aa3513ff",
+            "name": "created_at",
+            "comment": "创建时间",
+            "dataType": "timestamp",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.16795349121094,
+              "widthComment": 60,
+              "widthDataType": 65.45292663574219,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "0272eeee-f936-43ba-a253-52a9c83eebe4",
+            "name": "updated_at",
+            "comment": "更新时间",
+            "dataType": "timestamp",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.61296081542969,
+              "widthComment": 60,
+              "widthDataType": 65.45292663574219,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 246.5003,
+          "top": 604.8057,
+          "zIndex": 8,
+          "widthName": 172.0398406982422,
+          "widthComment": 67,
+          "color": "#607D8B"
+        },
+        "visible": true
+      },
+      {
+        "id": "c5a79c25-ee90-43ea-befd-872ae0da1362",
+        "name": "dictionary_table",
+        "comment": "字典表",
+        "columns": [
+          {
+            "id": "3c04410e-a33d-460c-8f43-c12f6a97e459",
+            "name": "id",
+            "comment": "id",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "b5696ade-e573-44e1-8038-54621e266254",
+            "name": "workload_type",
+            "comment": "任务工作量：0一般难度，1中等难度，2较高难度",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 89.00894165039062,
+              "widthComment": 120,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "85edf38d-59e2-49b3-9a58-18a97d24266c",
+            "name": "degree_of_urgency_type",
+            "comment": "任务紧急程度：0:不重要且不紧急1:本重要但紧急2:重要不紧急3:重要且紧急",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 149.3029327392578,
+              "widthComment": 120,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "1a9e7979-1231-472d-99c1-c4dd46f8f328",
+            "name": "account_type",
+            "comment": "账目类型： [0:支出，1:收入，2:核销]",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 82.66494750976562,
+              "widthComment": 120,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "637b7ea5-f0d8-4665-a3b5-5900ee77bd6a",
+            "name": "created_at",
+            "comment": "创建时间",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.16795349121094,
+              "widthComment": 60,
+              "widthDataType": 77.49092102050781,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "99552e08-8466-4320-be2f-591cf409a83a",
+            "name": "updated_at",
+            "comment": "更新时间",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.61296081542969,
+              "widthComment": 60,
+              "widthDataType": 77.49092102050781,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1369.4444,
+          "top": 49.5006,
+          "zIndex": 5,
+          "widthName": 97.61491394042969,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "9b5c7ab2-e748-401b-b6d8-1c8c3ac336fe",
+        "name": "schedule_classification_table",
+        "comment": "任务分类表",
+        "columns": [
+          {
+            "id": "f4dae98c-e081-4698-ace9-330b5540eae5",
+            "name": "classification_id",
+            "comment": "任务分类id",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.44688415527344,
+              "widthComment": 64.94598388671875,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "569de1bf-f2e5-4eda-ab2b-909e1072c94b",
+            "name": "schedule_classification_title",
+            "comment": "任务分类标题（10个字）",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 170.11581420898438,
+              "widthComment": 120,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "03d06d5a-ac4e-48fe-a5eb-6112d9fd7dbd",
+            "name": "schedule_classification_color",
+            "comment": "任务标签颜色",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 177.43482971191406,
+              "widthComment": 80,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "0a4d710d-ee38-44d0-858d-ba7cdd805d47",
+            "name": "created_at",
+            "comment": "创建时间",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.16795349121094,
+              "widthComment": 60,
+              "widthDataType": 77.49092102050781,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "032eab08-6677-4cc6-bce1-ffeb5a750ae7",
+            "name": "updated_at",
+            "comment": "更新时间",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.61296081542969,
+              "widthComment": 60,
+              "widthDataType": 77.49092102050781,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1369.6385,
+          "top": 324.6118,
+          "zIndex": 7,
+          "widthName": 177.05783081054688,
+          "widthComment": 67
+        },
+        "visible": true
+      },
+      {
+        "id": "3431b384-964f-4466-a385-82a1545bc254",
+        "name": "schedule_table",
+        "comment": "日程表",
+        "columns": [
+          {
+            "id": "480dee49-dcb1-46a0-8dcc-1d4ba43ff77b",
+            "name": "id",
+            "comment": "id",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "acab1e84-3a0f-4edc-b521-ef8879d7f9ba",
+            "name": "title",
+            "comment": "任务标题（长度15字符）",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "a97a82d1-1516-4e04-afac-eae8021d18f3",
+            "name": "description",
+            "comment": "任务描述",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.02792358398438,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "f57a654b-5e4e-4077-9dd7-23c240f820e6",
+            "name": "date_time",
+            "comment": "任务时间",
+            "dataType": "DATE",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.487945556640625,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "76d3295d-1622-440b-a89b-ff02fa81be7c",
+            "name": "sub_task",
+            "comment": "子任务，可以有多个 [\"a\",\"b\", \"c\"]",
+            "dataType": "VARCHAR",
+            "default": "[]",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "669e254f-5c1b-429f-9427-d052d0c04dcd",
+            "name": "workload",
+            "comment": "任务工作量：0一般难度，1中等难度，2较高难度",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "76fd996d-562f-4b7f-983d-787c0e1f9b72",
+            "name": "photograph",
+            "comment": "任务图片，返回前端url",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 71.23796081542969,
+              "widthComment": 120,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "391895e7-f073-402b-a4ef-5b3122cb6ab8",
+            "name": "degree_of_urgency",
+            "comment": "任务紧急程度：0:不重要且不紧急1:本重要但紧急2:重要不紧急3:重要且紧急",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 116.90695190429688,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "711ae3c0-c7c2-44b1-8cbd-f1835615cbdb",
+            "name": "number_of_cycles",
+            "comment": "循环次数",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 110.21192932128906,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "5256288f-3a2d-4317-a284-670e4183502b",
+            "name": "classification_id",
+            "comment": "任务分类id",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 98.44688415527344,
+              "widthComment": 64.94598388671875,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "6bcfe021-fc7f-4fb3-b842-11d1b7d124a8",
+            "name": "created_at",
+            "comment": "创建时间",
+            "dataType": "timestamp",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.16795349121094,
+              "widthComment": 60,
+              "widthDataType": 65.45292663574219,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "ab08673a-c8b7-4f3c-9a87-fb154043f543",
+            "name": "updated_at",
+            "comment": "更新时间",
+            "dataType": "timestamp",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.61296081542969,
+              "widthComment": 60,
+              "widthDataType": 65.45292663574219,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 807.7778,
+          "top": 347.7222,
+          "zIndex": 23,
+          "widthName": 91.55693054199219,
+          "widthComment": 60
+        },
+        "visible": true
+      },
+      {
+        "id": "b868d9a2-dfcf-4623-ada1-c11e486e2e0d",
+        "name": "memorandum_table",
+        "comment": "备忘录表",
+        "columns": [
+          {
+            "id": "84808f9e-5a73-41a6-a9da-4150409bb82a",
+            "name": "memorandum_id",
+            "comment": "id",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 101.80093383789062,
+              "widthComment": 60,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "e1f27b70-ec16-4c38-8a6d-7225d42b588c",
+            "name": "memorandum_content",
+            "comment": "备忘录内容",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 136.5629119873047,
+              "widthComment": 67,
+              "widthDataType": 63.78892517089844,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "9df118c9-9082-4981-b318-79269697503d",
+            "name": "created_at",
+            "comment": "创建时间",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.16795349121094,
+              "widthComment": 60,
+              "widthDataType": 77.49092102050781,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "18b583be-d62f-4b9b-83ac-59c2fb7c7da1",
+            "name": "updated_at",
+            "comment": "更新时间",
+            "dataType": "TIMESTAMP",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.61296081542969,
+              "widthComment": 60,
+              "widthDataType": 77.49092102050781,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 809,
+          "top": 713,
+          "zIndex": 4,
+          "widthName": 120.62492370605469,
+          "widthComment": 60
+        },
+        "visible": true
+      }
+    ],
+    "indexes": [
+      {
+        "id": "09651c67-01b4-4c30-9532-fc3cc380b0df",
+        "name": "",
+        "tableId": "b544d6dc-f3a6-4b4d-bb4d-5dcb3b5200be",
+        "columns": [],
+        "unique": false
+      }
+    ]
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": []
+  }
+}
