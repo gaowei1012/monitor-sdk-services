@@ -1,5 +1,6 @@
 // import index from './index'
 import { msg_api } from './msg_api/index'
+import { error_api } from './error_api/index'
 import { config } from '../config'
 import _ from 'lodash'
 
@@ -16,7 +17,7 @@ function open_api_register(app, ...routes) {
 // }
 
 function setRoutes(app): void {
-  open_api_register(app, [msg_api])
+  open_api_register(app, [msg_api, error_api])
 }
 
 export default setRoutes

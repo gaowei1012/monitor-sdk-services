@@ -1,2 +1,3 @@
 import { Msg } from './msgCtr'
-export { Msg }
+import { Error } from './errorCtr'
+export { Msg, Error }
