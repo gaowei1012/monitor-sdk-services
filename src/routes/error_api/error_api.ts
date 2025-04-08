@@ -1,3 +1,11 @@
+/*
+ * @Author: gaowei1012 gyb2020018@163.com
+ * @Date: 2024-09-21 14:02:01
+ * @LastEditors: gaowei1012 gyb2020018@163.com
+ * @LastEditTime: 2025-04-08 14:16:58
+ * @FilePath: /monitor-sdk-services/src/routes/error_api/error_api.ts
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 import { successBody, failBody } from '@/utils'
 import { tb_error } from '@/models/tables'
 import { Error } from '@/controller'
@@ -21,7 +29,7 @@ router.use('/', async function (req: express.Request, res: express.Response, nex
 router.post('/error/upload', async function (req: express.Request, res: express.Response) {
   try {
     const parseBody = req.body ? JSON.parse(req.body['msg']) : ''
-    console.log("parseBody", parseBody);
+    console.log('parseBody', parseBody)
     if (parseBody) {
       const body = {
         dt: parseBody['dt'],
@@ -34,7 +42,9 @@ router.post('/error/upload', async function (req: express.Request, res: express.
         device_info: parseBody['h']['device_info'],
         path: parseBody['options']['path'],
         errorMsg: parseBody['options']['errorMsg'],
-        errorInfo: parseBody['options']['errorInfo'] ? JSON.stringify(parseBody['options']['errorInfo']).replace(/\s+/g, "").substring(0, 499) : ''
+        errorInfo: parseBody['options']['errorInfo']
+          ? JSON.stringify(parseBody['options']['errorInfo']).replace(/\s+/g, '').substring(0, 499)
+          : ''
       }
       const result = await errorInstance.insert(body)
       res.send(successBody('收集错误成功', result))
@@ -46,7 +56,10 @@ router.post('/error/upload', async function (req: express.Request, res: express.
 
 router.get('/error/list', async function (req: express.Request, res: express.Response) {
   try {
-    const result = await errorInstance.getAll({})
+    const { page, size } = req.query
+    const pageNum = Number(page) || 1
+    const pageSize = Number(size) || 10
+    const result = await errorInstance.getAll({}, [], [['created_at', 'DESC']], pageNum, pageSize)
     res.send(successBody('获取列表成功', result))
   } catch (err) {
     res.send(failBody(err.code, '获取列表失败'))
