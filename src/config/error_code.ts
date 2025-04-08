@@ -1,3 +1,11 @@
+/*
+ * @Author: gaowei1012 gyb2020018@163.com
+ * @Date: 2024-06-09 22:37:45
+ * @LastEditors: gaowei1012 gyb2020018@163.com
+ * @LastEditTime: 2025-04-08 11:59:17
+ * @FilePath: /monitor-sdk-services/src/config/error_code.ts
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 const error_code = {
   otherError: 99999, //未手动捕获的错误
   //系统错误
@@ -84,5 +92,9 @@ const error_code = {
   IdCardFormatError: 60001,
   emailFormatError: 60002,
   phoneFormatError: 60003,
+
+
+  //参数错误
+  USERNAME_OR_PASSWORD_EMPTY: 70001,
 };
 export default error_code;

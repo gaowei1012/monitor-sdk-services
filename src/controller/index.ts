@@ -1,3 +1,4 @@
 import { Msg } from './msgCtr'
 import { Error } from './errorCtr'
-export { Msg, Error }
+import { Users } from './userCtr'
+export { Msg, Error, Users } 
