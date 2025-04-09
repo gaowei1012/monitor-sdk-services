@@ -2,7 +2,7 @@
  * @Author: gaowei1012 gyb2020018@163.com
  * @Date: 2024-09-20 16:48:55
  * @LastEditors: gaowei1012 gyb2020018@163.com
- * @LastEditTime: 2025-04-08 14:17:11
+ * @LastEditTime: 2025-04-09 13:59:27
  * @FilePath: /monitor-sdk-services/src/routes/msg_api/msg_api.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -48,6 +48,7 @@ router.post('/msg/upload', async function (req: express.Request, res: express.Re
     res.send(failBody(err.code, '统计数据失败'))
   }
 })
+
 
 router.get('/msg/list', async function (req: express.Request, res: express.Response) {
   try {
