@@ -2,7 +2,7 @@
  * @Author: gaowei1012 gyb2020018@163.com
  * @Date: 2024-09-21 14:02:01
  * @LastEditors: gaowei1012 gyb2020018@163.com
- * @LastEditTime: 2025-04-08 14:16:58
+ * @LastEditTime: 2025-04-10 19:02:04
  * @FilePath: /monitor-sdk-services/src/routes/error_api/error_api.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -29,7 +29,7 @@ router.use('/', async function (req: express.Request, res: express.Response, nex
 router.post('/error/upload', async function (req: express.Request, res: express.Response) {
   try {
     const parseBody = req.body ? JSON.parse(req.body['msg']) : ''
-    console.log('parseBody', parseBody)
+    // console.log('parseBody', parseBody)
     if (parseBody) {
       const body = {
         dt: parseBody['dt'],
