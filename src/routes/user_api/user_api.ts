@@ -2,7 +2,7 @@
  * @Author: gaowei1012 gyb2020018@163.com
  * @Date: 2025-04-08 11:44:29
  * @LastEditors: gaowei1012 gyb2020018@163.com
- * @LastEditTime: 2025-04-08 12:03:34
+ * @LastEditTime: 2025-04-11 10:16:03
  * @FilePath: /monitor-sdk-services/src/routes/user_api/user_api.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -34,6 +34,9 @@ router.use('/', async (req: express.Request, res: express.Response, next: expres
   }
 })
 
+/**
+ * 用户注册
+*/
 router.post('/register', async (req: express.Request, res: express.Response) => {
   try {
     if (req.body.username == '' || req.body.password == '') {
@@ -55,6 +58,9 @@ router.post('/register', async (req: express.Request, res: express.Response) => 
   }
 })
 
+/**
+ * 用户登录
+ */
 router.post('/login', async (req: express.Request, res: express.Response) => {
   try {
     if (req.body.username == '' || req.body.password == '') {
